@@ -1,0 +1,78 @@
+{
+  "name": "Broccoli",
+  "version": "0.1.0-beta.1",
+  "description": "",
+  "private": true,
+  "main": "app/index.html",
+  "scripts": {
+    "preinstall": "git submodule update --init --recursive --force",
+    "start": "nw",
+    "submodules-update": "npm install file:submodules/broccoli-html-editor file:submodules/broccoli-field-table file:submodules/node-broccoli-processor file:submodules/node-broccoli-styleguide-generator file:submodules/node-px2dt-localdata-access file:submodules/node-px2dt-health-check file:submodules/node-express-pickles2 file:submodules/node-pickles2-contents-editor file:submodules/node-pickles2-module-editor file:submodules/node-px2agent file:submodules/px2style file:submodules/node-utils79 file:submodules/node-cmd-queue file:submodules/node-git-parser file:submodules/node-remote-finder; gulp;",
+    "build": "node ./build/build.js"
+  },
+  "author": "Tomoya Koyanagi",
+  "license": "MIT",
+  "dependencies": {
+    "broccoli-html-editor": "file:submodules/broccoli-html-editor",
+    "fs-extra": "^7.0.1",
+    "iterate79": "^1.1.1",
+    "node-webkit-updater": "^0.3.3",
+    "px2style": "file:submodules/px2style",
+    "utils79": "^0.0.5",
+    "zip-folder": "^1.0.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-browserify": "^0.5.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^4.0.2",
+    "nw": "0.37.0-sdk",
+    "nw-builder": "3.5.7"
+  },
+  "pickles2": {
+    "network": {
+      "preview": {
+        "port": 58080
+      },
+      "appserver": {
+        "port": 58081
+      }
+    },
+    "dataDirName": ".app-broccoli",
+    "forum": {
+      "url": "https://github.com/broccoli-html-editor/broccoli-html-editor/issues",
+      "title": "GitHub issue"
+    },
+    "credit": "(C)Broccoli Project."
+  },
+  "manifestUrl": "https://pickles2.pxt.jp/release/app/Broccoli/package.json",
+  "devManifestUrl": "https://pickles2.pxt.jp/release/app_dev/Broccoli/package.json",
+  "window": {
+    "title": "Broccoli",
+    "toolbar": true,
+    "frame": true,
+    "width": 340,
+    "height": 420,
+    "fullscreen": false,
+    "icon": "app/common/images/appicon.png",
+    "position": "center"
+  },
+  "platformOverrides": {
+    "win": {
+      "window": {
+        "toolbar": false
+      }
+    },
+    "osx": {
+      "window": {
+        "toolbar": false
+      }
+    },
+    "linux": {
+      "window": {
+        "toolbar": false
+      }
+    }
+  }
+}

@@ -1,0 +1,249 @@
+@charset "UTF-8";
+@import url(./fess.css);
+@import url(./filter.css);
+body {
+  background-color: #fff;
+  cursor: default;
+  color: #333; }
+
+body {
+  /* http://www.softel.co.jp/blogs/tech/archives/2909 */
+  user-select: none;
+  /* CSS3 */
+  -moz-user-select: none;
+  /* Firefox */
+  -webkit-user-select: none;
+  /* Safari、Chromeなど */
+  -ms-user-select: none;
+  /* IE10かららしい */ }
+
+*:focus {
+  outline: none; }
+
+textarea {
+  width: 100%;
+  height: 12em; }
+
+img, svg {
+  max-width: 100%; }
+
+a {
+  color: #000;
+  text-decoration: underline; }
+
+a:hover {
+  color: #666; }
+
+.contents a.icon {
+  position: relative;
+  padding-left: 0.8em; }
+
+.contents a.icon:before {
+  content: "　";
+  background: url("./fess_res/icon.svg") 0 0 no-repeat transparent;
+  position: absolute;
+  top: 0.4em;
+  left: 0;
+  background-size: 0.6em 0.6em; }
+
+.contents .input-group-btn .px2-btn {
+  font-size: 12px;
+  width: 100%; }
+
+.contents .input-group-btn-lg .px2-btn {
+  font-size: 16px;
+  width: 100%; }
+
+/**
+ * スクロールバー
+ */
+::-webkit-scrollbar {
+  /* 1 */
+  background-color: #f3f3f3;
+  /*width: 8px;*/
+  /*height: 8px;*/ }
+
+::-webkit-scrollbar-button {
+  /* 2 */ }
+
+::-webkit-scrollbar-track {
+  /* 3 */ }
+
+::-webkit-scrollbar-track-piece {
+  /* 4 */ }
+
+::-webkit-scrollbar-thumb {
+  /* 5 */
+  background-color: #ccc;
+  border: 1px solid #fff;
+  border-radius: 4px; }
+
+::-webkit-scrollbar-corner {
+  /* 6 */ }
+
+::-webkit-resizer {
+  /* 7 */ }
+
+/**
+ * 選択可能領域
+ */
+.selectable {
+  user-select: auto;
+  /* CSS3 */
+  -moz-user-select: auto;
+  /* Firefox */
+  -webkit-user-select: auto;
+  /* Safari、Chromeなど */
+  -ms-user-select: auto;
+  /* IE10かららしい */ }
+
+/**
+ * ダイアログボックス
+ */
+.dialog_box {
+  background-color: #fff;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.2); }
+
+/**
+ * フォーム要素
+ */
+.form_elements input {
+  max-width: 100%; }
+
+/**
+ コード
+ */
+.contents pre {
+  background: #fafafa;
+  border: 1px solid #f0f0f0; }
+
+.contents pre code {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0; }
+
+.contents code {
+  border: 0px none; }
+
+/**
+ * リストビュー
+ */
+ul.listview {
+  border: 1px solid #999;
+  border-radius: 5px;
+  padding: 0;
+  overflow: hidden;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1); }
+  ul.listview li {
+    border-bottom: 1px solid #999;
+    list-style-type: none;
+    margin: 0;
+    padding: 0; }
+    ul.listview li:last-child {
+      border: none; }
+    ul.listview li > a {
+      display: block;
+      text-decoration: none;
+      padding: 0.3em 1.5em;
+      background-color: #fefefe; }
+      ul.listview li > a:hover {
+        background-color: #f9f9f9; }
+      ul.listview li > a.current {
+        font-weight: bold;
+        background-color: #00a0e6;
+        color: #fff; }
+    ul.listview li ul {
+      padding: 0;
+      margin: 0;
+      border-top: 1px dotted #ddd; }
+      ul.listview li ul li {
+        border-bottom: 1px dotted #ddd; }
+        ul.listview li ul li > a {
+          padding-left: 2.5em; }
+
+/**
+ * .clearfix
+ */
+.clearfix {
+  display: block;
+  float: none;
+  clear: both; }
+
+.clearfix:after {
+  content: " ";
+  display: block;
+  visibility: hidden;
+  height: 0.1px;
+  font-size: 0.1em;
+  line-height: 0;
+  clear: both; }
+
+.clearfix {
+  /* clearfix(for IE6,7) (IE8以降不要) */
+  zoom: 1; }
+
+/**
+ * プレビューウィンドウ
+ * ※JSとセットです。
+ */
+.preview_window_frame {
+  border-style: solid;
+  border-width: 63px 17px 18px 62px;
+  border-image: url("../images/windowframe.png") 63 17 18 62 repeat stretch;
+  -moz-border-image: url("../images/windowframe.png") 63 17 18 62 repeat stretch;
+  -webkit-border-image: url("../images/windowframe.png") 63 17 18 62 repeat stretch;
+  -o-border-image: url("../images/windowframe.png") 63 17 18 62 repeat stretch;
+  -ms-border-image: url("../images/windowframe.png") 63 17 18 62 repeat stretch;
+  box-sizing: border-box;
+  position: relative;
+  left: 0;
+  top: 0;
+  height: 300px; }
+
+.preview_window_frame--inner {
+  /*padding: -13px -2px -13px -57px;*/
+  margin: 0;
+  /*width: 100%; height: 100%;*/
+  display: block;
+  position: absolute;
+  top: -13px;
+  right: -12px;
+  bottom: -13px;
+  left: -57px;
+  border: none;
+  box-sizing: border-box; }
+
+.preview_window_frame--inner > iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  box-sizing: border-box; }
+
+/**
+ * Bootstrap3: btn
+ */
+.contents .dropdown-menu li {
+  list-style-type: inherit; }
+
+.contents .btn-group button {
+  margin: inherit; }
+
+.btn-default {
+  color: #333 !important; }
+
+.btn-primary,
+.btn-success,
+.btn-info,
+.btn-warning,
+.btn-danger {
+  color: #fff !important; }
+
+/**
+ * Bootstrap3 Tooltip
+ */
+.tooltip[role=tooltip] {
+  word-wrap: break-word; }

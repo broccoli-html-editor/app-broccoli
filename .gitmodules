@@ -1,0 +1,6 @@
+[submodule "submodules/broccoli-html-editor"]
+	path = submodules/broccoli-html-editor
+	url = https://github.com/broccoli-html-editor/broccoli-html-editor.git
+[submodule "submodules/px2style"]
+	path = submodules/px2style
+	url = https://github.com/pickles2/px2style.git
