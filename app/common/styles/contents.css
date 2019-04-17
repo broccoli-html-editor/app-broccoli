@@ -1,6 +1,4 @@
 @charset "UTF-8";
-@import url(./fess.css);
-@import url(./filter.css);
 body {
   background-color: #fff;
   cursor: default;

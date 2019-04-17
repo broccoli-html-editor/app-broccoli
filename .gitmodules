@@ -4,3 +4,6 @@
 [submodule "submodules/px2style"]
 	path = submodules/px2style
 	url = https://github.com/pickles2/px2style.git
+[submodule "submodules/node-px2dt-localdata-access"]
+	path = submodules/node-px2dt-localdata-access
+	url = https://github.com/pickles2/node-px2dt-localdata-access.git

@@ -17,6 +17,7 @@
     "fs-extra": "^7.0.1",
     "iterate79": "^1.1.1",
     "node-webkit-updater": "^0.3.3",
+    "px2dt-localdata-access": "file:submodules/node-px2dt-localdata-access",
     "px2style": "file:submodules/px2style",
     "utils79": "^0.0.5",
     "zip-folder": "^1.0.0"
@@ -33,15 +34,12 @@
   "pickles2": {
     "network": {
       "preview": {
-        "port": 58080
-      },
-      "appserver": {
-        "port": 58081
+        "port": 56080
       }
     },
     "dataDirName": ".app-broccoli",
     "forum": {
-      "url": "https://github.com/broccoli-html-editor/broccoli-html-editor/issues",
+      "url": "https://github.com/broccoli-html-editor/app-broccoli/issues",
       "title": "GitHub issue"
     },
     "credit": "(C)Broccoli Project."

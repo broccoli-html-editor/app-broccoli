@@ -1,9 +1,65 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Broccoli</title>
-    </head>
-    <body>
-        <h1>H1</h1>
-    </body>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Broccoli</title>
+
+		<meta name="viewport" content="width=device-width" />
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+
+		<!-- Pickles 2 Style -->
+		<link rel="stylesheet" href="./common/px2style/dist/styles.css" charset="utf-8" />
+
+		<!-- broccoli-html-editor -->
+		<link rel="stylesheet" href="./common/broccoli-html-editor/client/dist/broccoli.css" />
+
+		<!-- Local Resources -->
+		<link rel="stylesheet" href="./index_files/app.css" type="text/css" />
+
+		<script id="template-outer-frame" type="text/template">
+			<div class="theme_wrap">
+				<header class="px2-header">
+					<div class="px2-header__inner">
+						<div class="px2-header__px2logo">
+							<a href="javascript: px.deselectProject(); px.subapp();"><img src="./common/images/logo_bg.svg" alt="Pickles 2" /></a>
+						</div>
+						<div class="px2-header__block">
+							<div class="px2-header__id">
+								<a href="javascript: px.deselectProject(); px.subapp();">---</a>
+							</div>
+							<div class="px2-header__global-menu"></div>
+						</div>
+						<div class="px2-header__shoulder-menu">
+							<button>≡</button>
+							<ul><li><a href="javascript:px.exit();">Quit</a></li></ul>
+						</div>
+					</div>
+				</header>
+				<div class="contents">
+				</div>
+			</div>
+		</script>
+	</head>
+	<body>
+
+		<div class="splash">
+			<div class="splash__px2logo"><img src="./common/images/logo.svg" alt="Broccoli" /></div>
+			<div class="splash__message">
+				<p>起動しています...</p>
+			</div>
+		</div>
+
+		<!-- jQuery -->
+		<script src="./common/scripts/jquery-3.2.0.min.js" type="text/javascript"></script>
+
+		<!-- Pickles 2 Style -->
+		<script src="./common/px2style/dist/scripts.js" charset="utf-8"></script>
+
+		<!-- broccoli-html-editor -->
+		<script src="./common/broccoli-html-editor/client/dist/broccoli.js"></script>
+
+		<!-- Local Resources -->
+		<script src="index_files/app.js"></script>
+	</body>
 </html>
